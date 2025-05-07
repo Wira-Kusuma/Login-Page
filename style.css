@@ -100,3 +100,47 @@ br + button:hover {
 .kanan button:hover {
     background-color: rgb(68, 63, 63);
 }
+
+/* responsive @query */
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px black;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .kiri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .kanan {
+        width: 100%;
+    }
+
+    #email, #password {
+        width: 90%;
+    }
+
+    /* .kanan button {
+        width:50%;
+    } */
+}
+  

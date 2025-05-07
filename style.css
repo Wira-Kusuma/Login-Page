@@ -96,3 +96,7 @@ br + button:hover {
     border-radius: 20px;
     background-color: black;
 }
+
+.kanan button:hover {
+    background-color: rgb(68, 63, 63);
+}

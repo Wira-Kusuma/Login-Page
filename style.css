@@ -41,6 +41,7 @@ body {
 .big {font-size: 50px; font-weight: bold;}
 .medium {font-size: 30px;}
 
+
 .kiri > p {
     text-align: center;
     row-gap: 20px;
@@ -101,9 +102,12 @@ br + button:hover {
     background-color: rgb(68, 63, 63);
 }
 
+.medium-hp {display: none;}
+#signup-hp {display: none;}
+
 /* responsive @query */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         height: 100vh;
         display: flex;
@@ -136,11 +140,22 @@ br + button:hover {
     }
 
     #email, #password {
-        width: 90%;
+        width: 300px;
     }
 
-    /* .kanan button {
-        width:50%;
-    } */
+    .medium {display: none;}
+    #signup {display: none;}
+
+    .medium-hp {display: block;}
+    #signup-hp {display: block;}
+
+    .medium-hp {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .kanan #signup-hp {
+        margin-top: 10px;
+    }
 }
   

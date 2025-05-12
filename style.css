@@ -75,7 +75,7 @@ br + button:hover {
     height: 100%;
 }
 
-.kanan > p {
+.login {
     font-size: 40px;
     font-weight: bold;
 }
@@ -105,6 +105,10 @@ br + button:hover {
 .medium-hp {display: none;}
 #signup-hp {display: none;}
 
+#result {
+    font-size: 20px;
+    font-weight: bold;
+}
 /* responsive @query */
 
 @media only screen and (max-width: 700px) {

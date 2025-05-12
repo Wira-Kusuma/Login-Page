@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        console.log ("for test\nusername : wira\npassword : 123456")
+    </script>
     <div class="parent">
         <div class="kiri">
             <p>
@@ -16,15 +19,36 @@
             </p>
         </div>
         <div class="kanan">
-            <p>Login</p>
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email">
-            <label for="password"> Password </label>
-            <input type="password" name="password" id="password">
-            <button>Login</button>
+            <p class="login">Login</p>
+            <input type="email" name="email" id="email" placeholder="Username / Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
             <span class="medium-hp">Don't have an account?</span> <br> 
-            <button id="signup-hp">Sign up</button>
+            <button id="signup-hp" onclick="login()">Sign up</button>
+            <p id="result"></p>
         </div>
     </div>
+    <script>alert("check console for email and password for beta test")</script>
+    <script>
+        function login() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let result = document.getElementById("result");
+
+            if (email === "wira" && password === "123456") {
+               result.innerHTML = "login successful";
+               result.style.color = "green";
+            } 
+            else if (email == "" && password === "") {
+                result.innerHTML = "username and password cannot blank";
+                result.style.color = "red";
+            }
+            else {
+                result.innerHTML = "password or email incorrect";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
 </body>
 </html>

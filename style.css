@@ -136,7 +136,7 @@ br + button:hover {
 }
 /* responsive @query */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     body {
         height: 100vh;
         display: flex;

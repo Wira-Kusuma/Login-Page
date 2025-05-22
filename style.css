@@ -132,8 +132,7 @@ br + button:hover {
 #signup-hp {display: none;}
 
 #result {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 14px;
 }
 /* responsive @query */
 

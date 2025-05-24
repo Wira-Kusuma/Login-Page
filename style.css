@@ -176,6 +176,8 @@ br + button:hover {
 
     .medium {display: none;}
     #signup {display: none;}
+    .kiri2 {display: none;}
+    .kanan2 {display: none;}
 
     .medium-hp {display: block;}
     #signup-hp {display: block;}

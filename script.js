@@ -22,3 +22,12 @@ function login() {
 function closeModal() {
     document.getElementById("login-success").style.display = "none";
 }
+
+function ganti() {
+    document.getElementById("kanan").style.display="none";
+    document.getElementById("kanan2").style.display="flex";
+}
+function gantiL() {
+    document.getElementById("kanan").style.display="flex";
+    document.getElementById("kanan2").style.display="none";
+}

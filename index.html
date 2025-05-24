@@ -12,14 +12,21 @@
         console.log ("for test\nusername : wira\npassword : 123456")
     </script>
     <div class="parent">
-        <div class="kiri">
+        <div class="kiri" id="kiri">
             <p>
                 <span class="big">Welcome back</span> <br> 
                 <span class="medium">Don't have an account?</span> <br> 
-                <button id="signup">Sign up</button>
+                <button id="signup" onclick="ganti()">Sign up</button>
             </p>
         </div>
-        <div class="kanan">
+        <div class="kiri kiri2" id="kiri2">
+            <p>
+                <span class="big">Welcome back</span> <br> 
+                <span class="medium">Already have an account?</span> <br> 
+                <button id="signup" onclick="gantiL()">Login</button>
+            </p>
+        </div>
+        <div class="kanan" id="kanan">
             <p class="login">Login</p>
 
             <input type="email" name="email" id="email" placeholder="Username / Email">
@@ -34,7 +41,29 @@
 
             <br> 
 
-            <button id="signup-hp">Sign up</button>
+            <button id="signup-hp" onclick="ganti()">Sign up</button>
+
+            <!-- for screen -->
+
+            <p id="result"></p>
+        </div>
+        <div class="kanan kanan2" id="kanan2">
+            <p class="login">Register</p>
+
+            <input type="email" name="email" id="email" placeholder="Username / Email">
+
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Confirm Password">
+
+            <button onclick="login()">Create Account</button>
+
+            <!-- for screen -->
+
+            <span class="medium-hp">Already have an account?</span> 
+
+            <br> 
+
+            <button id="signup-hp" onclick="gantiL()">Login</button>
 
             <!-- for screen -->
 

@@ -130,6 +130,8 @@ br + button:hover {
 
 .medium-hp {display: none;}
 #signup-hp {display: none;}
+.kanan2 {display: none;}
+.kiri2 {display: none;}
 
 #result {
     font-size: 14px;

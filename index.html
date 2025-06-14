@@ -3,81 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page Design</title>
+    <title>Login</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/login.png" type="image/x-icon">
 </head>
 <body>
-    <script>
-        console.log ("for test\nusername : wira\npassword : 123456")
-    </script>
-    <div class="parent">
-        <div class="kiri" id="kiri">
-            <p>
-                <span class="big">Welcome back</span> <br> 
-                <span class="medium">Don't have an account?</span> <br> 
-                <button id="signup" onclick="ganti()">Sign up</button>
-            </p>
-        </div>
-        <div class="kiri kiri2" id="kiri2">
-            <p>
-                <span class="big">Welcome back</span> <br> 
-                <span class="medium">Already have an account?</span> <br> 
-                <button id="signup" onclick="gantiL()">Login</button>
-            </p>
-        </div>
-        <div class="kanan" id="kanan">
-            <p class="login">Login</p>
 
-            <input type="email" name="email" id="email" placeholder="Username / Email">
+    <header>
+        <h1>Wira</h1>
 
-            <input type="password" name="password" id="password" placeholder="Password">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Portofolio</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
 
-            <button onclick="login()">Login</button>
+        <button id="register">Register</button>
+    </header>
+    
 
-            <!-- for screen -->
+    <main class="login">
+        <h2>Login</h2>
 
-            <span class="medium-hp">Don't have an account?</span> 
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
 
-            <br> 
-
-            <button id="signup-hp" onclick="ganti()">Sign up</button>
-
-            <!-- for screen -->
-
-            <p id="result"></p>
-        </div>
-        <div class="kanan kanan2" id="kanan2">
-            <p class="login">Register</p>
-
-            <input type="email" name="email" id="email" placeholder="Username / Email">
-
-            <input type="password" name="password" id="password" placeholder="Password">
-            <input type="password" name="password" id="password" placeholder="Confirm Password">
-
-            <button>Create Account</button>
-
-            <!-- for screen -->
-
-            <span class="medium-hp">Already have an account?</span> 
-
-            <br> 
-
-            <button id="signup-hp" onclick="gantiL()">Login</button>
-
-            <!-- for screen -->
-
-            <p id="result"></p>
-        </div>
-    </div>
-    <div id="login-success" class="modal">
-        <div class="modal-content">
-            <img src="img/accept.png" alt="accept">
-            <h1>Access Granted</h1>
-            <button onclick="closeModal()">Tutup</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+        <button id="login-now">Login now</button>
+        <p>Not have an account? <a href="">Register</a></p>
+    </main>
 </body>
 </html>

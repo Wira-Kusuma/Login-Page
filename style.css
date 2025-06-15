@@ -36,7 +36,7 @@ nav a {
     font-size: 1.1rem;
 }
 
-#register {
+#registerBtn, #loginBtn {
     padding: 10px;
     width: 110px;
     border: 2px solid white;
@@ -46,14 +46,18 @@ nav a {
     transition: ease-in-out 0.2s;
     cursor: pointer;
     box-shadow: 0 2px 12px 0 rgba(255,255,255,0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#register:hover {
+#registerBtn:hover, #loginBtn:hover {
     background-color: white;
     color: black;
 }
 
-.login  {
+.login, .register  {
     width: fit-content;
     margin: auto;
     padding: 30px;
@@ -96,6 +100,15 @@ input:focus {
 #login-now:hover {
     box-shadow: none;
 }
+
+#toRegister, #toLogin {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.register{display: none;}
+#loginBtn{display: none;}
 
 @media (max-width: 700px) {
     nav {

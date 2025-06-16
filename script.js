@@ -67,6 +67,7 @@ function validation() {
 
 function closeNotif() {
     document.getElementById("notif").style.display="none";
+    document.getElementById("notifRegister").style.display="none";
 }
 
 
@@ -107,8 +108,4 @@ function validationRegister() {
         validationRegisterPassword.value="";
         validationRegisterConfirmPassword.value="";
     }
-}
-
-function closeNotifRegister() {
-    document.getElementById("notifRegister").style.display="none";
 }

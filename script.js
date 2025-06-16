@@ -112,12 +112,12 @@ function validationRegister() {
         // display notification if login succeed
         document.getElementById("notifRegister").style.display="flex";
         // detele wrong validation after login
-        registerEmail.innerText="";
-        registerPassword.innerText="";
-        registerPasswordConfirm.innerText="";
+        validationRegisterEmail.innerText="";
+        validationRegisterPassword.innerText="";
+        validationRegisterConfirmPassword.innerText="";
         // to delete after logging
-        validationRegisterEmail.value="";
-        validationRegisterPassword.value="";
-        validationRegisterConfirmPassword.value="";
+        registerEmail.value="";
+        registerPassword.value="";
+        registerPasswordConfirm.value="";
     }
 }

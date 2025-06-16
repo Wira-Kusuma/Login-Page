@@ -9,7 +9,6 @@ let registerForm = document.getElementById("registerForm");
 let registerBtn = document.getElementById("registerBtn");
 let loginBtn = document.getElementById("loginBtn");
 
-
 toLogin.addEventListener("click", loginSwich);
 toRegister.addEventListener("click", registerSwich);
 

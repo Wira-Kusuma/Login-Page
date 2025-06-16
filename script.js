@@ -1,10 +1,8 @@
 let toLogin = document.getElementById("toLogin");
 let toRegister = document.getElementById("toRegister");
 
-
 let loginForm = document.getElementById("loginForm");
 let registerForm = document.getElementById("registerForm");
-
 
 let registerBtn = document.getElementById("registerBtn");
 let loginBtn = document.getElementById("loginBtn");

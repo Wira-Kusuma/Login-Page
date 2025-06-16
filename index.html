@@ -44,22 +44,29 @@
     <main class="register" id="registerForm">
         <h2>Register</h2>
 
-        <input type="email" placeholder="Email">
-        <p class="validation" id="validationEmail"></p>
-        <input type="password" placeholder="Password">
-        <p class="validation" id="validationEmail"></p>
-        <input type="password" placeholder="Confirm password">
-        <p class="validation" id="validationEmail"></p>
+        <input type="email" placeholder="Email" id="registerEmail">
+        <p class="validation" id="validationRegisterEmail"></p>
+        <input type="password" placeholder="Password" id="registerPassword">
+        <p class="validation" id="validationRegisterPassword"></p>
+        <input type="password" placeholder="Confirm password" id="registerPasswordConfirm">
+        <p class="validation" id="validationRegisterConfirmPassword"></p>
 
         <button id="register" class="formBtn">register</button>
         <p>Already have an account <span id="toLogin" >Login</span></p>
     </main>
 
-    <div class="notifbg-yes" id="notif">
+    <div class="notifbg" id="notif">
         <div class="notif">
             <img src="img/accept.png" alt="">
             <h3>Access Granted</h3>
             <button onclick="closeNotif()">Close</button>
+        </div>
+    </div>
+    <div class="notifbg" id="notifRegister">
+        <div class="notif">
+            <img src="img/accept.png" alt="">
+            <h3>Account created</h3>
+            <button onclick="closeNotifRegister()">Close</button>
         </div>
     </div>
 

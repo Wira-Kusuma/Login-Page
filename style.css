@@ -57,7 +57,7 @@ nav a:hover {
     align-items: center;
 }
 
-.notifbg-yes button {
+.notifbg button {
     padding: 10px;
     width: 110px;
     border: 2px solid black;
@@ -143,7 +143,7 @@ input:focus {
 .register{display: none;}
 #loginBtn{display: none;}
 
-.notifbg-yes {
+.notifbg {
     position: fixed;
     z-index: 1000;
     top: 0;

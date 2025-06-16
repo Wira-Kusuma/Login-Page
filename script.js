@@ -68,3 +68,47 @@ function validation() {
 function closeNotif() {
     document.getElementById("notif").style.display="none";
 }
+
+
+
+// register validation
+
+/** @type {HTMLInputElement} */
+let registerEmail = document.getElementById("registerEmail");
+let registerPassword = document.getElementById("registerPassword");
+let registerPasswordConfirm = document.getElementById("registerPasswordConfirm");
+
+
+let validationRegisterEmail = document.getElementById("validationRegisterEmail");
+let validationRegisterPassword = document.getElementById("validationRegisterPassword");
+let validationRegisterConfirmPassword = document.getElementById("validationRegisterConfirmPassword");
+
+document.getElementById("register").addEventListener("click",validationRegister);
+
+function validationRegister() {
+    if (registerEmail.value === "") {
+    validationRegisterEmail.innerText="Email cannot blank";
+    }
+    if (registerPassword.value === "") {
+    validationRegisterPassword.innerText="Password cannot blank";
+    }
+    if (registerPasswordConfirm.value === "") {
+    validationRegisterConfirmPassword.innerText="Password confirm cannot blank";
+    }
+    else {
+        // display notification if login succeed
+        document.getElementById("notifRegister").style.display="flex";
+        // detele wrong validation after login
+        registerEmail.innerText="";
+        registerPassword.innerText="";
+        registerPasswordConfirm.innerText="";
+        // to delete after logging
+        validationRegisterEmail.value="";
+        validationRegisterPassword.value="";
+        validationRegisterConfirmPassword.value="";
+    }
+}
+
+function closeNotifRegister() {
+    document.getElementById("notifRegister").style.display="none";
+}

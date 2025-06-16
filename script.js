@@ -47,12 +47,19 @@ let validationPassword = document.getElementById("validationPassword");
 document.getElementById("loginNow").addEventListener("click",validation)
 
 function validation() {
-    if (userEmail.value === "") {
+    if (userPassword.value === "" && userEmail.value === "") {
+    validationPassword.innerText="Password cannot blank";
     validationEmail.innerText="Email cannot blank";
     }
+
+    else if (userEmail.value === "") {
+    validationEmail.innerText="Email cannot blank";
+    }
+
     else if (userPassword.value === "") {
     validationPassword.innerText="Password cannot blank";
     }
+    
     else {
         // display notification if login succeed
         document.getElementById("notif").style.display="flex";
@@ -87,8 +94,13 @@ let validationRegisterConfirmPassword = document.getElementById("validationRegis
 document.getElementById("register").addEventListener("click",validationRegister);
 
 function validationRegister() {
-    if (registerEmail.value === "") {
+    if (registerEmail.value === "" && registerPassword.value === "" && registerPasswordConfirm.value === "") {
     validationRegisterEmail.innerText="Email cannot blank";
+    validationRegisterPassword.innerText="Password cannot blank";
+    validationRegisterConfirmPassword.innerText="Password confirm cannot blank";
+    }
+    else if (registerEmail.value === "") {
+        validationRegisterEmail.innerText="Email cannot blank";
     }
     else if (registerPassword.value === "") {
     validationRegisterPassword.innerText="Password cannot blank";

@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- header -->
     <header>
         <h1><a href="https://github.com/Wira-Kusuma/Login-Page" style="text-decoration: none;">Wira</a></h1>
 
@@ -24,29 +25,46 @@
         <button id="loginBtn">Login</button>
     </header>
     
-
+    <!-- login form -->
     <main class="login" id="loginForm">
         <h2>Login</h2>
 
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <input type="email" placeholder="Email" id="userEmail">
+        <p class="validation" id="validationEmail"></p>
 
-        <button id="login-now">Login</button>
+        <input type="password" placeholder="Password" id="userPassword">
+        <p class="validation" id="validationPassword"></p>
+
+        <button id="loginNow" class="formBtn">Login</button>
+        
         <p>Not have an account? <span id="toRegister" >Register</span></p>
     </main>
 
-
+    <!-- register form -->
     <main class="register" id="registerForm">
         <h2>Register</h2>
 
         <input type="email" placeholder="Email">
+        <p class="validation" id="validationEmail"></p>
         <input type="password" placeholder="Password">
+        <p class="validation" id="validationEmail"></p>
         <input type="password" placeholder="Confirm password">
+        <p class="validation" id="validationEmail"></p>
 
-        <button id="login-now">register</button>
+        <button id="register" class="formBtn">register</button>
         <p>Already have an account <span id="toLogin" >Login</span></p>
     </main>
 
+    <div class="notifbg-yes" id="notif">
+        <div class="notif">
+            <img src="img/accept.png" alt="">
+            <h3>Access Granted</h3>
+            <button onclick="closeNotif()">Close</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
     <footer>
         <p>&copy; 2025 Wira Kusuma. All rights reserved.</p>
     </footer>

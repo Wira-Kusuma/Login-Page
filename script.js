@@ -1,3 +1,5 @@
+// swiching login and register
+
 let toLogin = document.getElementById("toLogin");
 let toRegister = document.getElementById("toRegister");
 
@@ -28,4 +30,41 @@ function registerSwich() {
 
     registerBtn.style.display="none";
     loginBtn.style.display="flex";
+}
+
+
+// form validation below
+
+// login validation
+/** @type {HTMLInputElement} */
+let userEmail = document.getElementById("userEmail");
+let userPassword = document.getElementById("userPassword");
+
+let validationEmail = document.getElementById("validationEmail");
+let validationPassword = document.getElementById("validationPassword");
+
+
+document.getElementById("loginNow").addEventListener("click",validation)
+
+function validation() {
+    if (userEmail.value === "") {
+    validationEmail.innerText="Email cannot blank";
+    }
+    if (userPassword.value === "") {
+    validationPassword.innerText="Password cannot blank";
+    }
+    else {
+        // display notification if login succeed
+        document.getElementById("notif").style.display="flex";
+        // detele wrong validation after login
+        validationEmail.innerText="";
+        validationPassword.innerText="";
+        // to delete after logging
+        userEmail.value="";
+        userPassword.value="";
+    }
+}
+
+function closeNotif() {
+    document.getElementById("notif").style.display="none";
 }

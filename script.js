@@ -40,32 +40,21 @@ function registerSwich() {
 let userEmail = document.getElementById("userEmail");
 let userPassword = document.getElementById("userPassword");
 
-let validationEmail = document.getElementById("validationEmail");
-let validationPassword = document.getElementById("validationPassword");
+let loginFormValidation = document.getElementById("loginFormValidation");
 
 
 document.getElementById("loginNow").addEventListener("click",validation)
 
 function validation() {
-    if (userPassword.value === "" && userEmail.value === "") {
-    validationPassword.innerText="Password cannot blank";
-    validationEmail.innerText="Email cannot blank";
-    }
-
-    else if (userEmail.value === "") {
-    validationEmail.innerText="Email cannot blank";
-    }
-
-    else if (userPassword.value === "") {
-    validationPassword.innerText="Password cannot blank";
+    if (userPassword.value === "" || userEmail.value === "") {
+    loginFormValidation.innerText="Email or Password cannot blank"
     }
     
     else {
         // display notification if login succeed
         document.getElementById("notif").style.display="flex";
         // detele wrong validation after login
-        validationEmail.innerText="";
-        validationPassword.innerText="";
+        loginFormValidation.innerText="";
         // to delete after logging
         userEmail.value="";
         userPassword.value="";
@@ -87,34 +76,21 @@ let registerPassword = document.getElementById("registerPassword");
 let registerPasswordConfirm = document.getElementById("registerPasswordConfirm");
 
 
-let validationRegisterEmail = document.getElementById("validationRegisterEmail");
-let validationRegisterPassword = document.getElementById("validationRegisterPassword");
-let validationRegisterConfirmPassword = document.getElementById("validationRegisterConfirmPassword");
+let registerFormValidation = document.getElementById("registerFormValidation");
+
 
 document.getElementById("register").addEventListener("click",validationRegister);
 
 function validationRegister() {
-    if (registerEmail.value === "" && registerPassword.value === "" && registerPasswordConfirm.value === "") {
-    validationRegisterEmail.innerText="Email cannot blank";
-    validationRegisterPassword.innerText="Password cannot blank";
-    validationRegisterConfirmPassword.innerText="Password confirm cannot blank";
+    if (registerEmail.value === "" || registerPassword.value === "" || registerPasswordConfirm.value === "") {
+    registerFormValidation.innerText="Email or password cannot blank";
     }
-    else if (registerEmail.value === "") {
-        validationRegisterEmail.innerText="Email cannot blank";
-    }
-    else if (registerPassword.value === "") {
-    validationRegisterPassword.innerText="Password cannot blank";
-    }
-    else if (registerPasswordConfirm.value === "") {
-    validationRegisterConfirmPassword.innerText="Password confirm cannot blank";
-    }
+    
     else {
         // display notification if login succeed
         document.getElementById("notifRegister").style.display="flex";
         // detele wrong validation after login
-        validationRegisterEmail.innerText="";
-        validationRegisterPassword.innerText="";
-        validationRegisterConfirmPassword.innerText="";
+        registerFormValidation.innerText="";
         // to delete after logging
         registerEmail.value="";
         registerPassword.value="";

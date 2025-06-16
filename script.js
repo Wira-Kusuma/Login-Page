@@ -50,7 +50,7 @@ function validation() {
     if (userEmail.value === "") {
     validationEmail.innerText="Email cannot blank";
     }
-    if (userPassword.value === "") {
+    else if (userPassword.value === "") {
     validationPassword.innerText="Password cannot blank";
     }
     else {
@@ -90,10 +90,10 @@ function validationRegister() {
     if (registerEmail.value === "") {
     validationRegisterEmail.innerText="Email cannot blank";
     }
-    if (registerPassword.value === "") {
+    else if (registerPassword.value === "") {
     validationRegisterPassword.innerText="Password cannot blank";
     }
-    if (registerPasswordConfirm.value === "") {
+    else if (registerPasswordConfirm.value === "") {
     validationRegisterConfirmPassword.innerText="Password confirm cannot blank";
     }
     else {

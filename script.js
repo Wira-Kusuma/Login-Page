@@ -81,8 +81,11 @@ let registerFormValidation = document.getElementById("registerFormValidation");
 document.getElementById("register").addEventListener("click",validationRegister);
 
 function validationRegister() {
-    if (registerEmail.value === "" || registerPassword.value === "" || registerPasswordConfirm.value === "") {
+    if (registerEmail.value === "" || registerPassword.value === "") {
     registerFormValidation.innerText="Email or password cannot blank";
+    }
+    else if(registerPasswordConfirm.value === "") {
+        registerFormValidation.innerText="Confirm the password";
     }
     
     else {

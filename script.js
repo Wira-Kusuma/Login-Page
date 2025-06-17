@@ -32,6 +32,7 @@ function registerSwich() {
 }
 
 
+
 // form validation below
 
 // login validation
@@ -60,6 +61,8 @@ function validation() {
     }
 }
 
+
+
 function closeNotif() {
     document.getElementById("notif").style.display="none";
     document.getElementById("notifRegister").style.display="none";
@@ -74,9 +77,7 @@ let registerEmail = document.getElementById("registerEmail");
 let registerPassword = document.getElementById("registerPassword");
 let registerPasswordConfirm = document.getElementById("registerPasswordConfirm");
 
-
 let registerFormValidation = document.getElementById("registerFormValidation");
-
 
 document.getElementById("register").addEventListener("click",validationRegister);
 

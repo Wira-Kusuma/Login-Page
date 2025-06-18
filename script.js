@@ -46,15 +46,18 @@ let loginFormValidation = document.getElementById("loginFormValidation");
 document.getElementById("loginNow").addEventListener("click",validation)
 
 function validation() {
-    if (userPassword.value === "" || userEmail.value === "") {
+    if (userEmail.value === "admin" && userPassword.value === "admin123" ) {
+        // display notification if login succeed
+        document.getElementById("notif").style.display="flex";
+    }
+
+    else if (userEmail.value === "" || userPassword.value === "" ) {
     loginFormValidation.innerText="Email or Password cannot blank"
     }
     
-    else {
-        // display notification if login succeed
-        document.getElementById("notif").style.display="flex";
+    else if (userEmail.value !== "admin" || userPassword.value !== "admin123" ) {
         // detele wrong validation after login
-        loginFormValidation.innerText="";
+        loginFormValidation.innerText="Email or Password wrong!"
         // to delete after logging
         userEmail.value="";
         userPassword.value="";

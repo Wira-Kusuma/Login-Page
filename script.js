@@ -16,6 +16,7 @@ loginBtn.addEventListener("click", loginSwich);
 registerBtn.addEventListener("click", registerSwich);
 
 function loginSwich() {
+    loginForm.classList.add("efek");
     registerForm.style.display="none";
     loginForm.style.display="flex";
 
@@ -24,6 +25,7 @@ function loginSwich() {
 }
 
 function registerSwich() {
+    registerForm.classList.add("efek");
     loginForm.style.display="none";
     registerForm.style.display="flex";
 
